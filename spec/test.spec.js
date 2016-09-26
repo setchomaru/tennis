@@ -62,27 +62,27 @@ expect(tennis.echo()).toEqual('Love-Love');
 })
 
 
-it('should echo "Fifteen-Love"when A Rated',function(){
+it('should echo "Fifteen-Love"when Get ScoreA',function(){
 
 tennis.ScoreA();
 
 expect(tennis.echo()).toEqual('Fifteen-Love');
 })
 
-it('should echo "Thirty-Love"when A Rated',function(){
+it('should echo "Thirty-Love"when Get ScoreA',function(){
 
 tennis.ScoreA();
 
 expect(tennis.echo()).toEqual('Thirty-Love');
 })
 
-it('should echo "forty-Love"when A Rated',function(){
+it('should echo "forty-Love"when Get ScoreA',function(){
 
 tennis.ScoreA();
 
 expect(tennis.echo()).toEqual('forty-Love');
 })
-it('should echo "fifty-Love"when A Rated',function(){
+it('should echo "fifty-Love"when Get ScoreA',function(){
 
 
 tennis.ScoreA();
