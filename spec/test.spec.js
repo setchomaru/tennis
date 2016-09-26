@@ -59,67 +59,67 @@ expect(tennis).toEqual('Love-Love');
 
 });
 
-it('should echo "Fifteen-Love"when starting the game',function(){
+it('should echo "Fifteen-Love"when A Rated',function(){
 var tennis = Tennis(15,0);
 
 expect(tennis).toEqual('Fifteen-Love');
 
 });
 
-it('should echo "Thirty-Love"when starting the game',function(){
+it('should echo "Thirty-Love"when A Rated',function(){
 var tennis = Tennis(30,0);
 
 expect(tennis).toEqual('Thirty-Love');
 
 });
-it('should echo "forty-Love"when starting the game',function(){
+it('should echo "forty-Love"when A Rated',function(){
 var tennis = Tennis(40,0);
 
 expect(tennis).toEqual('forty-Love');
 
 });
-it('should echo "fifty-Love"when starting the game',function(){
+it('should echo "fifty-Love"when A Rated',function(){
 var tennis = Tennis(50,0);
 
 expect(tennis).toEqual('fifty-Love');
 
 });
 
-it('should echo "Love-fifteen"when starting the game',function(){
+it('should echo "Love-fifteen"when B Rated',function(){
 var tennis = Tennis(0,15);
 
 expect(tennis).toEqual('Love-fifteen');
 
 });
 
-it('should echo "Love-Thirt"when starting the game',function(){
+it('should echo "Love-Thirt"when B Rated',function(){
 var tennis = Tennis(0,30);
 
 expect(tennis).toEqual('Love-Thirt');
 
 });
 
-it('should echo "Love-forty"when starting the game',function(){
+it('should echo "Love-forty"when B Rated',function(){
 var tennis = Tennis(0,40);
 
 expect(tennis).toEqual('Love-forty');
 
 });
 
-it('should echo "Love-fifty"when starting the game',function(){
+it('should echo "Love-fifty"when B Rated',function(){
 var tennis = Tennis(0,50);
 
 expect(tennis).toEqual('Love-fifty');
 
 });
-it('should echo "fifteen-fifteen"when starting the game',function(){
+it('should echo "fifteen-fifteen"when A Equal B',function(){
 var tennis = Tennis(15,15);
 
 expect(tennis).toEqual('fifteen-fifteen');
 
 });
 
-it('should echo "thiry-thiry"when starting the game',function(){
+it('should echo "thiry-thiry"when A Equal B',function(){
 var tennis = Tennis(30,30);
 
 expect(tennis).toEqual('thiry-thiry');
