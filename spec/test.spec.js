@@ -101,5 +101,5 @@ it('should echo "B Winner "when A Winner',function(){
 tennis.ScoreB();
 
 expect(tennis.echo()).toEqual('B Winner');
-})
+})  //เจ๋งมากค่ะ 
 });
