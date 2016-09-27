@@ -33,10 +33,6 @@ else if(A===40)
 }
 
   }
-this.winA=function(){
-if(A >= 40)
-console.log('A  winner');
-}
 
 this.echo = function(){
   if(A===0&&B===0){
@@ -54,7 +50,7 @@ this.echo = function(){
   return'forty-Love'
   }
   if(A===50&&B===0){
-  return'fifty-Love'
+  return'A Winner'
   }
 
 }
@@ -91,12 +87,12 @@ tennis.ScoreA();
 
 expect(tennis.echo()).toEqual('forty-Love');
 })
-it('should echo "fifty-Love"when Get ScoreA',function(){
+
+it('should echo "A Winner "when A Winner',function(){
 
 
 tennis.ScoreA();
 
-expect(tennis.echo()).toEqual('fifty-Love');
+expect(tennis.echo()).toEqual('A Winner');
 })
-
 });
