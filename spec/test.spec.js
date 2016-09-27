@@ -2,11 +2,9 @@ function Tennis(){
 
     var A;
     var B;
-
   this.start=function(){
     A=0;
     B=0;
-
 
   }
 
@@ -14,22 +12,18 @@ function Tennis(){
 if(A===0)
 {
   A=15;
-
 }
 else if(A===15)
 {
   A=30;
-
 }
 else if(A===30)
 {
   A=40;
-
 }
 else if(A===40)
 {
   A=50;
-
 }
 }
 
@@ -55,6 +49,7 @@ else if(A===40)
   }
 }
 
+
 this.echo = function(){
   if(A===0&&B===0){
       return'Love-Love';
@@ -69,8 +64,13 @@ else if(A===15&&B===0){
  else if(A===40&&B===0){
   return'forty-Love'
   }
+<<<<<<< HEAD
  else if(A===50&&B===0){
   return'A Winner'
+=======
+  if(A===50&&B===0){
+  return'A winner'
+>>>>>>> d59609597faa583f80d5ebd915c3a891243fa3ca
   }
 else if(B===15)
 {
@@ -92,32 +92,32 @@ expect(tennis.echo()).toEqual('Love-Love'); //A=0-0
 })
 
 
-it('should echo "Fifteen-Love"when Get ScoreA',function(){
+it('should echo "Fifteen-Love"when A Rated',function(){
 
 tennis.ScoreA();
 
 expect(tennis.echo()).toEqual('Fifteen-Love');//A=15-0
 })
 
-it('should echo "Thirty-Love"when Get ScoreA',function(){
+it('should echo "Thirty-Love"when A Rated',function(){
 
 tennis.ScoreA();
 
 expect(tennis.echo()).toEqual('Thirty-Love');//A=30-0
 })
 
-it('should echo "forty-Love"when Get ScoreA',function(){
+it('should echo "forty-Love"when A Rated',function(){
 
 tennis.ScoreA();
 
 expect(tennis.echo()).toEqual('forty-Love');//A=40-0
 })
-
-it('should echo "A Winner "when A Winner',function(){
+it('should echo "A winner"when A winner',function(){
 
 
 tennis.ScoreA();
 
+<<<<<<< HEAD
 expect(tennis.echo()).toEqual('A Winner'); //A win
 })
 
@@ -127,6 +127,10 @@ it('should echo "Fifteen-Love"when  Get ScoreB',function(){
 tennis.ScoreB();
 
 expect(tennis.echo()).toEqual('Fifteen-Love'); //B== 15-0
+})
+
+=======
+expect(tennis.echo()).toEqual('A winner');
 })
 
 });
