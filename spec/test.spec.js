@@ -126,7 +126,7 @@ it('should echo "Fifteen-Love"when  Get ScoreB',function(){
 
 tennis.ScoreB();
 
-expect(tennis.echo()).toEqual('Fifteen-Love'); //B= 15-0
+expect(tennis.echo()).toEqual('Fifteen-Love'); //B== 15-0
 })
 
 });
