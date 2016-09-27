@@ -95,4 +95,11 @@ tennis.ScoreA();
 
 expect(tennis.echo()).toEqual('A Winner');
 })
+it('should echo "B Winner "when A Winner',function(){
+
+
+tennis.ScoreB();
+
+expect(tennis.echo()).toEqual('B Winner');
+})
 });
