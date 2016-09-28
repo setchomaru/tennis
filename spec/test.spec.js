@@ -28,27 +28,26 @@ else if(A===40)
 }
 
 
-  this.ScoreB=function(){
+this.ScoreB=function(){
 
-  if(B===0){
+    if(B===0)
+    {
     B=15;
-  }
-  else if(B===15)
-  {
+    }
+    else if(B===15)
+    {
     B=30;
-  }
-  else if(B===30)
-  {
-    B=40;
-
-  }
-  else if(B===40)
-  {
-    B=50;
-
-  }
+    }
 }
 
+this.echoB = function(){
+  if(A===0&&B===15){
+    return'Love-Fifteen';
+  }
+  if(A===0&&B===30){
+    return'Love-Thirty';
+  }
+}
 
 this.echo = function(){
   if(A===0&&B===0){
@@ -64,23 +63,12 @@ else if(A===15&&B===0){
  else if(A===40&&B===0){
   return'forty-Love'
   }
-<<<<<<< HEAD
+
  else if(A===50&&B===0){
   return'A Winner'
-=======
-  if(A===50&&B===0){
-  return'A winner'
->>>>>>> d59609597faa583f80d5ebd915c3a891243fa3ca
-  }
-else if(B===15)
-{
-    return'Fifteen-Love'
-}
-
 
 }
 }
-
 
 describe('tennis game',function(){
   var tennis = new Tennis();
@@ -92,21 +80,21 @@ expect(tennis.echo()).toEqual('Love-Love'); //A=0-0
 })
 
 
-it('should echo "Fifteen-Love"when A Rated',function(){
+it('should echo "Fifteen-Love"when get A',function(){
 
 tennis.ScoreA();
 
 expect(tennis.echo()).toEqual('Fifteen-Love');//A=15-0
 })
 
-it('should echo "Thirty-Love"when A Rated',function(){
+it('should echo "Thirty-Love"when get A',function(){
 
 tennis.ScoreA();
 
 expect(tennis.echo()).toEqual('Thirty-Love');//A=30-0
 })
 
-it('should echo "forty-Love"when A Rated',function(){
+it('should echo "forty-Love"when get A',function(){
 
 tennis.ScoreA();
 
@@ -117,20 +105,19 @@ it('should echo "A winner"when A winner',function(){
 
 tennis.ScoreA();
 
-<<<<<<< HEAD
 expect(tennis.echo()).toEqual('A Winner'); //A win
 })
 
-it('should echo "Fifteen-Love"when  Get ScoreB',function(){
+});
+
+describe('tennis game',function(){
+  var tennis = new Tennis();
+it('should echo "Love-Fifteen"when  Get ScoreB',function(){
 
 
 tennis.ScoreB();
 
-expect(tennis.echo()).toEqual('Fifteen-Love'); //B== 15-0
-})
-
-=======
-expect(tennis.echo()).toEqual('A winner');
+expect(tennis.echoB()).toEqual('Love-Fifteen'); //B== 15-0
 })
 
 });
