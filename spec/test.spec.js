@@ -24,6 +24,7 @@ A=40;
 else if(A===40)
 {
 A=50;
+
 }
 }
 
@@ -46,7 +47,10 @@ this.ScoreB=function(){
     {
       B=50;
     }
+
 }
+
+
 
 this.echo = function(){
 
@@ -85,7 +89,17 @@ if(A===0&&B===40){
  return'B winner';
  }
 }
+
+this.echoAB = function(){
+  if(A===15&&B===15){
+      return'Fifteen-Fifteen';
+  }
+  else if(A===30&&B===30){
+    return'Thirty-Thirty';
+  }
 }
+}
+
 
 describe('tennis game',function(){
 var tennis = new Tennis();
@@ -159,6 +173,20 @@ it('should echo "B winner" when B winner',function(){
 tennisB.ScoreB();
 
 expect(tennisB.echoB()).toEqual('B winner');  //B=50
+})
+
+
+});
+
+
+describe('tennis game',function(){
+var tennisAB = new Tennis();
+
+it('should echo "Fifteen-Fifteen"when A=B',function(){
+tennisAB.start();
+tennisAB.ScoreA();
+tennisAB.ScoreB();
+expect(tennisAB.echoAB()).toEqual('Fifteen-Fifteen');  //B=A 15-15
 })
 
 });
